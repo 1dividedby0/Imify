@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gll-Hb-OuI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="imagepicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Ut-bY-SEm">
+                                <rect key="frame" x="144" y="109" width="312" height="272"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="312" id="wVJ-aV-ucP"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hPl-Od-BQa">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="179"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="STx-9L-19e">
+                                <rect key="frame" x="0.0" y="176" width="600" height="138"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="1eZ-lw-cEv">
+                                <rect key="frame" x="290" y="235" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkD-cI-U98">
+                                <rect key="frame" x="250" y="257" width="100" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="5kD-6k-0xq"/>
+                                    <constraint firstAttribute="height" constant="57" id="vcZ-6U-9C3"/>
+                                </constraints>
+                                <state key="normal" title="Choose an image to analyze" image="Facebook-Messenger-search-icon"/>
+                                <connections>
+                                    <action selector="loadImageButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Kv-Mu-qCR"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="powered-by-google-on-white (1)" translatesAutoresizingMaskIntoConstraints="NO" id="ceD-zt-jah">
+                                <rect key="frame" x="228" y="562" width="144" height="18"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1eZ-lw-cEv" firstAttribute="top" secondItem="hPl-Od-BQa" secondAttribute="bottom" constant="56" id="09Z-ET-wFJ"/>
+                            <constraint firstItem="STx-9L-19e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="112" id="3zp-ZA-kLi"/>
+                            <constraint firstItem="STx-9L-19e" firstAttribute="centerX" secondItem="fkD-cI-U98" secondAttribute="centerX" id="41r-7t-AhZ"/>
+                            <constraint firstItem="ceD-zt-jah" firstAttribute="centerX" secondItem="fkD-cI-U98" secondAttribute="centerX" id="G1m-Q3-XuT"/>
+                            <constraint firstItem="2Ut-bY-SEm" firstAttribute="centerX" secondItem="1eZ-lw-cEv" secondAttribute="centerX" id="ME2-bb-CNZ"/>
+                            <constraint firstItem="2Ut-bY-SEm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="Oy4-8G-nmv"/>
+                            <constraint firstItem="STx-9L-19e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QEG-Kk-mRc"/>
+                            <constraint firstItem="hPl-Od-BQa" firstAttribute="trailing" secondItem="STx-9L-19e" secondAttribute="trailing" id="cKB-ea-Xjw"/>
+                            <constraint firstItem="hPl-Od-BQa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dLO-BS-6pS"/>
+                            <constraint firstItem="2Ut-bY-SEm" firstAttribute="centerY" secondItem="STx-9L-19e" secondAttribute="centerY" id="dvO-rB-PqV"/>
+                            <constraint firstItem="fkD-cI-U98" firstAttribute="centerX" secondItem="1eZ-lw-cEv" secondAttribute="centerX" id="iNx-2R-qgs"/>
+                            <constraint firstAttribute="trailing" secondItem="STx-9L-19e" secondAttribute="trailing" id="iXG-du-SmV"/>
+                            <constraint firstItem="fkD-cI-U98" firstAttribute="bottom" secondItem="STx-9L-19e" secondAttribute="bottom" id="lpd-3d-zNL"/>
+                            <constraint firstItem="STx-9L-19e" firstAttribute="leading" secondItem="hPl-Od-BQa" secondAttribute="leading" id="m1h-B1-loc"/>
+                            <constraint firstItem="fkD-cI-U98" firstAttribute="top" secondItem="1eZ-lw-cEv" secondAttribute="bottom" constant="2" id="qEA-JI-xUY"/>
+                            <constraint firstAttribute="bottom" secondItem="ceD-zt-jah" secondAttribute="bottom" constant="20" symbolic="YES" id="vxz-7X-NIB"/>
+                            <constraint firstItem="1eZ-lw-cEv" firstAttribute="centerY" secondItem="2Ut-bY-SEm" secondAttribute="centerY" id="wbs-F8-cb1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yMD-qr-m2g"/>
+                    <connections>
+                        <outlet property="faceResults" destination="STx-9L-19e" id="Yv0-8N-Nj0"/>
+                        <outlet property="imageView" destination="2Ut-bY-SEm" id="pff-E4-rB8"/>
+                        <outlet property="labelResults" destination="hPl-Od-BQa" id="ZIt-Vv-ykD"/>
+                        <outlet property="spinner" destination="1eZ-lw-cEv" id="8RT-oq-9u5"/>
+                        <segue destination="zei-ng-mnA" kind="show" identifier="toMain" id="KO0-oP-dve"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1339" y="387"/>
+        </scene>
+        <!--Wikipedia View Controller-->
+        <scene sceneID="gSE-bP-VLR">
+            <objects>
+                <viewController id="f9o-hw-sKK" customClass="WikipediaViewController" customModule="imagepicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e9x-4Z-ijt"/>
+                        <viewControllerLayoutGuide type="bottom" id="pSQ-7S-2RK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4JQ-J8-sdd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l0P-M9-ii8">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="l0P-M9-ii8" secondAttribute="trailing" id="8iK-UT-Eat"/>
+                            <constraint firstItem="l0P-M9-ii8" firstAttribute="bottom" secondItem="pSQ-7S-2RK" secondAttribute="top" id="Qjv-rZ-tuC"/>
+                            <constraint firstItem="l0P-M9-ii8" firstAttribute="leading" secondItem="4JQ-J8-sdd" secondAttribute="leading" id="Vlg-k0-SFK"/>
+                            <constraint firstItem="l0P-M9-ii8" firstAttribute="top" secondItem="e9x-4Z-ijt" secondAttribute="bottom" id="lMK-Wm-uNO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="l0P-M9-ii8" id="Lzk-oV-nm5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQU-4i-ULi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1339" y="1056"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="N9F-hP-glB">
+            <objects>
+                <viewController id="zei-ng-mnA" customClass="MainViewController" customModule="imagepicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BSh-ol-b2w"/>
+                        <viewControllerLayoutGuide type="bottom" id="7xP-og-0NC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="83t-5G-qw6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6v-V0-390">
+                                <rect key="frame" x="220" y="263" width="161" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="egc-Zf-C1o"/>
+                                    <constraint firstAttribute="width" constant="161" id="jtl-3Z-HYX"/>
+                                </constraints>
+                                <state key="normal" title="BUY" image="amazon-button"/>
+                                <connections>
+                                    <action selector="buy:" destination="zei-ng-mnA" eventType="touchUpInside" id="pIR-S8-nX1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUo-1g-Oq6">
+                                <rect key="frame" x="255" y="490" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="bJU-jc-Jfg"/>
+                                </constraints>
+                                <state key="normal" title="Instagram" image="a3rxT9ck"/>
+                                <connections>
+                                    <action selector="instagram:" destination="zei-ng-mnA" eventType="touchUpInside" id="AfZ-Gt-pyq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMB-rl-WAq">
+                                <rect key="frame" x="255" y="358" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="CeL-ea-4az"/>
+                                    <constraint firstAttribute="width" constant="90" id="dih-rG-pQx"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="wikipedia"/>
+                                <connections>
+                                    <action selector="whatIsThis:" destination="zei-ng-mnA" eventType="touchUpInside" id="aAL-2A-X62"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Q82-uJ-cio">
+                                <rect key="frame" x="173" y="88" width="254" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="CGV-kK-2CT"/>
+                                    <constraint firstAttribute="height" constant="28" id="u1s-GP-9oW"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsC-ia-UiL">
+                                <rect key="frame" x="250" y="137" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="S5r-Nz-iJp"/>
+                                </constraints>
+                                <state key="normal" image="logo-facebook"/>
+                                <connections>
+                                    <action selector="reddit:" destination="zei-ng-mnA" eventType="touchUpInside" id="WZb-wr-uf1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="uUo-1g-Oq6" secondAttribute="bottom" constant="20" symbolic="YES" id="IUa-I7-r1x"/>
+                            <constraint firstItem="uUo-1g-Oq6" firstAttribute="trailing" secondItem="LMB-rl-WAq" secondAttribute="trailing" id="LUa-N4-ycP"/>
+                            <constraint firstItem="LMB-rl-WAq" firstAttribute="top" secondItem="r6v-V0-390" secondAttribute="bottom" constant="47" id="Lsp-Vl-AB8"/>
+                            <constraint firstItem="dsC-ia-UiL" firstAttribute="top" secondItem="Q82-uJ-cio" secondAttribute="bottom" constant="21" id="Uvp-FI-2Zo"/>
+                            <constraint firstItem="dsC-ia-UiL" firstAttribute="centerX" secondItem="Q82-uJ-cio" secondAttribute="centerX" id="YP8-Dd-SU0"/>
+                            <constraint firstItem="LMB-rl-WAq" firstAttribute="leading" secondItem="uUo-1g-Oq6" secondAttribute="leading" id="hN9-VR-jjS"/>
+                            <constraint firstItem="Q82-uJ-cio" firstAttribute="top" secondItem="BSh-ol-b2w" secondAttribute="bottom" constant="24" id="k6L-fY-BW1"/>
+                            <constraint firstItem="r6v-V0-390" firstAttribute="centerX" secondItem="LMB-rl-WAq" secondAttribute="centerX" id="m15-zK-yXq"/>
+                            <constraint firstItem="r6v-V0-390" firstAttribute="top" secondItem="dsC-ia-UiL" secondAttribute="bottom" constant="26" id="q84-63-XfD"/>
+                            <constraint firstItem="Q82-uJ-cio" firstAttribute="centerX" secondItem="83t-5G-qw6" secondAttribute="centerX" id="seh-7e-Q5L"/>
+                            <constraint firstItem="dsC-ia-UiL" firstAttribute="centerX" secondItem="r6v-V0-390" secondAttribute="centerX" id="v5S-ZL-hUw"/>
+                            <constraint firstItem="uUo-1g-Oq6" firstAttribute="top" secondItem="LMB-rl-WAq" secondAttribute="bottom" constant="42" id="wYE-qE-ycY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="segment" destination="Q82-uJ-cio" id="5IA-MY-7Re"/>
+                        <segue destination="f9o-hw-sKK" kind="show" identifier="toWiki" id="lkj-o9-g2z"/>
+                        <segue destination="f9o-hw-sKK" kind="show" identifier="toAmazon" id="1jZ-3E-hU0"/>
+                        <segue destination="f9o-hw-sKK" kind="show" identifier="toFacebook" id="HBR-6D-q9B"/>
+                        <segue destination="f9o-hw-sKK" kind="show" identifier="toInsta" id="RAH-3r-nU4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MXC-kC-hmv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1339" y="1760"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fAK-pL-CgW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gll-Hb-OuI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zmQ-XF-amW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GnY-hb-DZa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mmy-Wy-qtK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="387"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Facebook-Messenger-search-icon" width="950" height="534"/>
+        <image name="a3rxT9ck" width="512" height="512"/>
+        <image name="amazon-button" width="230" height="68"/>
+        <image name="logo-facebook" width="512" height="512"/>
+        <image name="powered-by-google-on-white (1)" width="144" height="18"/>
+        <image name="wikipedia" width="512" height="512"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="HBR-6D-q9B"/>
+    </inferredMetricsTieBreakers>
+</document>
